@@ -22,7 +22,7 @@ namespace MSBUTestBackend.Controllers
         }
 
         [HttpPost]
-        public string InsertStorageLocation(TrBpkbObjectRequest objReq)
+        public string InsertBpkb(TrBpkbObjectRequest objReq)
         {
             string Result = new Repository(Configuration).SaveTrBpkb(objReq);
             return Result;
